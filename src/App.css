@@ -1,0 +1,197 @@
+.screen {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.sub {
+  color: var(--ink-600);
+  margin: 0 0 24px;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.9rem;
+}
+
+/* Auth */
+.auth-screen {
+  text-align: center;
+  padding-top: 64px;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+.auth-form input {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--ink-900);
+  font-size: 0.95rem;
+}
+.auth-message {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  color: var(--ink-600);
+}
+.link-button {
+  background: none;
+  border: none;
+  color: var(--teal);
+  margin-top: 16px;
+  font-size: 0.88rem;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.primary-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: var(--teal);
+  color: white;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.primary-btn:disabled { opacity: 0.6; cursor: default; }
+.secondary-btn {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--ink-900);
+  margin-top: 10px;
+}
+.action-row { display: flex; flex-direction: column; }
+
+/* Onboarding */
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.persona-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--ink-900);
+}
+.persona-card:hover { border-color: var(--teal); }
+.persona-emoji { font-size: 2rem; }
+.persona-name { font-size: 0.85rem; }
+
+/* Today write */
+.mood-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.mood-btn {
+  font-size: 1.6rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--card-border);
+  background: var(--card);
+}
+.mood-btn.selected {
+  border-color: var(--gold);
+  background: var(--gold-soft);
+}
+.diary-textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--ink-900);
+  font: inherit;
+  resize: vertical;
+}
+.char-count {
+  text-align: right;
+  font-size: 0.78rem;
+  color: var(--ink-300);
+  margin-top: 4px;
+}
+
+/* Comment view */
+.entry-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.entry-mood { font-size: 1.6rem; margin-bottom: 6px; }
+.entry-content { white-space: pre-wrap; color: var(--ink-900); }
+.comment-bubble {
+  background: var(--teal-soft);
+  border: 1px solid var(--teal);
+  border-radius: 8px;
+  padding: 16px;
+}
+.comment-bubble.small { margin-top: 10px; }
+.comment-bubble p { margin: 0; color: var(--ink-900); }
+.comment-bubble .muted { color: var(--ink-300); }
+
+/* History */
+.history-list { display: flex; flex-direction: column; gap: 8px; }
+.history-item {
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.history-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--card);
+  border: none;
+  color: var(--ink-900);
+  text-align: left;
+}
+.history-mood { font-size: 1.2rem; }
+.history-date { flex: 1; font-size: 0.88rem; }
+.history-persona { font-size: 0.8rem; color: var(--ink-300); }
+.history-detail { padding: 14px; }
+
+/* App shell */
+.app-shell {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--card-border);
+}
+.nav-title { font-weight: 600; }
+.nav-buttons { display: flex; gap: 6px; }
+.nav-buttons button {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  color: var(--ink-900);
+  font-size: 0.85rem;
+}
+.nav-buttons button.nav-active {
+  background: var(--gold-soft);
+  border-color: var(--gold);
+  color: var(--gold);
+}
