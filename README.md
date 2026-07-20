@@ -6,6 +6,20 @@
 
 설계 문서: 사용자 흐름 / 데이터 모델 / 보안 체크리스트는 별도 설계 지도 참고.
 
+## 빠르게 로컬에서 실행해보기
+
+```bash
+git clone https://github.com/artstock805/AI-diary-Persona.git
+cd AI-diary-Persona
+cp .env.example .env
+npm install
+npm run dev
+```
+
+`http://localhost:5173` 으로 접속하면 된다 (Vite 기본 포트, 3000 아님). `.env.example`에 이미 실제 Supabase 값이 들어있어서(anon 키는 공개용이라 안전) 바로 실행 가능 — 직접 가입해서 테스트해보면 된다.
+
+## 본인 Supabase 프로젝트로 새로 시작하려면
+
 ## 0. 준비물
 
 - Node.js (설치됨)
@@ -53,7 +67,7 @@ npm install
 npm run dev
 ```
 
-브라우저에서 안내된 주소로 접속 → 가입 → 페르소나 선택 → 오늘 쓰기 → 저장하면 AI 코멘트가 붙어서 보인다. 새로고침해도, 로그아웃 후 다시 로그인해도 히스토리에 그대로 남아있으면 성공.
+`http://localhost:5173` 접속 → 가입 → 페르소나 선택 → 오늘 쓰기 → 저장하면 AI 코멘트가 붙어서 보인다. 새로고침해도, 로그아웃 후 다시 로그인해도 히스토리에 그대로 남아있으면 성공.
 
 ## 5. 배포
 
