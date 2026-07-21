@@ -1,6 +1,6 @@
 # AIFFEL Campus Code Peer Review Templete
 - 코더 : 전세환 (GitHub: [artstock805](https://github.com/artstock805))
-- 리뷰어 : mjkimlunar (GitHub)
+- 리뷰어 : 김만정 (GitHub: mjkimlunar)
 
 - 리뷰 대상: https://github.com/artstock805/AI-diary-Persona (fork: https://github.com/mjkimlunar/AI-diary-Persona)
 - 프로젝트 요약: React(Vite) + Supabase(Auth/DB/Edge Function) 기반 "AI 페르소나 일기장". 사용자가 오늘의 기분/일기를 쓰면, 고른 페르소나의 말투로 Gemini API가 코멘트를 생성해 저장한다.
